@@ -8,7 +8,7 @@ String datasourceFile(String usecaseFileName, String featureName, String datasou
   return '''
 ////********** START IMPORTS **********////
 import '../../../../../infrastructure/datasource.dart';
-import '../../../domain/usecases/$usecaseFileName.dart';
+import '../usecases/$usecaseFileName.dart';
 ////********** END IMPORTS **********////
 
 abstract class ${convertToPascalCase(featureName)}${convertToPascalCase(datasource)}DataSource extends DataSource {
