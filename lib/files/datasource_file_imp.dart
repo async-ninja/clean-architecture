@@ -77,8 +77,8 @@ String _localDataSourceFileImp(
 import 'package:injectable/injectable.dart';
 import 'package:logger/logger.dart';
 import '../../../../../helpers/persistence/persistence_helper.dart';
-import '../../../domain/usecases/$usecaseFileName.dart';
-import '${featureName}_${dataSource}_datasource.dart';
+import '../../../domain/usecases/$usecaseFileName.dart';More actions
+import '../../../domain/data/${featureName}_remote_datasource.dart';
 ////********** END IMPORTS **********////
 
 @LazySingleton(as: ${convertToPascalCase(featureName)}${convertToPascalCase(dataSource)}DataSource)
